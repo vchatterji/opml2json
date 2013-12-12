@@ -1,0 +1,27 @@
+{
+  "name": "opml2json",
+  "version": "0.0.1",
+  "description": "A simple utility to convert OPML files exported by Mindnode to JSON format consumable by the D3 data visualisation Javascript library",
+  "main": "parser.js",
+  "scripts": {
+    "test": "echo \"We have no tests yet! Add some.\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vchatterji/opml2json"
+  },
+  "keywords": [
+    "OPML",
+    "D3",
+    "Javascript"
+  ],
+  "author": "Varun Chatterji",
+  "license": "Creative Commons Attribution-Share Alike 3.0 Unported",
+  "bugs": {
+    "url": "https://github.com/vchatterji/opml2json/issues"
+  },
+  "homepage": "https://github.com/vchatterji/opml2json",
+  "dependencies": {
+    "node-expat": "~2.1.3"
+  }
+}

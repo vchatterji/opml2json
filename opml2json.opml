@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<opml version="1.0">
+    <head>
+        <title>opml2json</title>
+        <ownerName></ownerName>
+    </head>
+    <body>
+        <outline text="opml2json">
+            <outline text="export opml files to JSON">
+                <outline text="use them with the D3 Javascript"></outline>
+                <outline text="use them with dataflick coming soon "></outline>
+                <outline text="let’s transform data to information"></outline>
+            </outline>
+            <outline text="simple command line interface">
+                <outline text="use from Mac or Windows"></outline>
+                <outline text="node.js rocks"></outline>
+            </outline>
+        </outline>
+    </body>
+</opml>
