@@ -9,15 +9,15 @@ You can use the tool from the command line in the following way
 
 	sudo node parser.js inputfile.opml outputfile.json
 
-Or from Windows, open a command prompt as Administraotr and then
+Or from Windows, open a command prompt as Administrator and then
 
 	node parser.js inputfile.opml outputfile.json
 
 Testing
 =======
-A sample Mindnode file is included with this project. We have used this file with Mindnode Pro and exported to OPML.
+A sample Mindnode "file" (it is actually a folder) is included with this project. We have used this file with Mindnode Pro and exported to OPML.
 
-The exported OPML file is also provided with the project. Go ahead try out this tool on the file.
+The exported OPML file is also provided with the project. Go ahead try out this tool on the OPML file.
 
 A zip archive is also included with includes a sample of the HTML required to use the generated file using D3.
 
