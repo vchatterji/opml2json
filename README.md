@@ -11,7 +11,7 @@ Look at some of the amazing stuff you can do with D3: [examples are here](https:
 Why is this useful?
 ===================
 
-Mindnode makes it extremely simple to create trees of information. However, if you want to share that map with anyone, they need Mindnode too which is rather Apple device oriented and expensive. Using this tool, you can export your Mindnode tree to JSON. Then you can use D3 to create an interactive tree which users can see in their borwsers. 
+Mindnode makes it extremely simple to create trees of information. However, if you want to share that map with anyone, they need Mindnode too which is rather Apple device oriented and expensive. Using this tool, you can export your Mindnode tree to JSON. Then you can use D3 to create an interactive tree which users can see in their browsers. 
 
 This is what your Mindnode tree will look like in the browser: [see example](http://mbostock.github.io/d3/talk/20111018/tree.html)
 
