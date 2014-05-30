@@ -9,7 +9,7 @@ function writeTree(tree) {
 	fs.appendFileSync(outputFile, "{");
 	fs.appendFileSync(outputFile,"\"name\":\"" + tree.text + "\"");
 	if(tree.children.length > 0) {
-		fs.appendFileSync(outputFile, ",")
+		fs.appendFileSync(outputFile, ",");
 		fs.appendFileSync(outputFile, "\"children\":[");
 		for(var i=0; i<tree.children.length; i++) {
 			writeTree(tree.children[i]);
@@ -23,19 +23,19 @@ function writeTree(tree) {
 }
 
 if (!inputFile || !outputFile) {
-	console.log("Usage:node parser.js inputfile.opml outputfile.json\nYou might need to use sudo node if you do not have enough permissions.")
+	console.log("Usage:node parser.js inputfile.opml outputfile.json\nYou might need to use sudo node if you do not have enough permissions.");
 }
 else
 {	
 	//Check if input file exists
 	try {
-	    // Query the entry
-	    var stats = fs.lstatSync(inputFile);
+		// Query the entry
+		var stats = fs.lstatSync(inputFile);
 
-	    // Is it a directory?
-	    if (stats.isDirectory()) {
-	        console.log("The specified path:" + inputFile + " is a directory not file.")
-	    }
+		// Is it a directory?
+		if (stats.isDirectory()) {
+			console.log("The specified path:" + inputFile + " is a directory not file.");
+		}
 		else
 		{
 			var tree;
@@ -43,13 +43,13 @@ else
 			
 			parser = expat.createParser();
 			parser.on('startElement', function (name, attrs) {
-			  	if(name=="outline") {
+				if(name=="outline") {
 					if(tree === undefined) {
 						tree = {
 							parent:null,
 							text: attrs.text,
 							children: []
-						}
+						};
 						currentNode = tree;
 					}
 					else {
@@ -57,7 +57,7 @@ else
 							parent:currentNode,
 							text: attrs.text,
 							children: []
-						}
+						};
 						currentNode.children.push(node);
 						currentNode = node;
 					}
@@ -65,12 +65,12 @@ else
 			});
 			parser.on('endElement', function (name) {
 				if(name=="outline") {
-			  		currentNode = currentNode.parent;
+					currentNode = currentNode.parent;
 				}
 			});
 
 			parser.on('error', function (err) {
-			  console.error(err); 
+				console.error(err); 
 			});
 			parser.on('close', function() {
 				try
@@ -88,7 +88,7 @@ else
 		}
 	}
 	catch (e) {
-	    console.log("Error loading file:" + inputFile);
+		console.log("Error loading file:" + inputFile);
 	}
 }
 
