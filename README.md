@@ -52,8 +52,3 @@ Prerequisites
 =============
 
 You need [Node.js](http://nodejs.org/) installed on your computer
-
-Other Projects
-==============
-
-I am also working on another project called [dataflick](https://github.com/vchatterji/dataflick) which is just starting out. That project will enable you to use JSON files exported by this tool to visualise data using [D3](http://d3js.org/) in interesting ways. Stay tuned...

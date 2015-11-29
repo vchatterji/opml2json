@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/vchatterji/opml2json",
   "dependencies": {
-    "node-expat": "~2.1.3"
+    "node-expat": "^2.3.11"
   }
 }
